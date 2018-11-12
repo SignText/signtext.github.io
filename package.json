@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "highlight.js": "^9.13.1",
-    "signtext": "^1.0.0"
+    "signtext": "^1.0.2"
   }
 }
