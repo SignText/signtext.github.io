@@ -30,11 +30,11 @@ gulp.task("dist", function () {
   return browserify()
       .add("src/index.ts")
       .plugin(tsify)
-      .transform(babelify, { extensions: [".ts"] })
+      // .transform(babelify, { extensions: [".ts"] })
         .bundle()
       .pipe(source("index.js"))
       .pipe(buffer())
-      .pipe(uglify())
+      // .pipe(uglify())
       .pipe(gulp.dest("dist/"));
 });
 
