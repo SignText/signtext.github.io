@@ -11,20 +11,31 @@
     "dist": "gulp \"dist\""
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-eslint": "^5.0.0",
     "gulp-tslint": "^8.1.3",
+    "gulp-typescript": "^5.0.0-alpha.3",
     "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
     "tsify": "^4.0.0",
     "tslint": "^5.11.0",
     "typescript": "^3.1.1",
     "utf-8-validate": "^5.0.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "signtext": "^1.0.2"
+  },
+  "target": {
+    "ie": 8
   }
 }

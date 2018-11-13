@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+body {
+  background-color: rgb(134, 18, 18);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: rgb(99, 7, 7);
+}
+
+h1 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  text-shadow: -4px 4px black;
+}
+
+.code[readonly] {
+  background-color: rgb(99, 7, 7);
+}
+.code {
+  background-color: rgb(134, 18, 18);
+  color: white;
+  font-family: "Consolas", monospace;
+}
