@@ -9,7 +9,7 @@ import * as signtext from "signtext";
     });
   }
 
-  const playground_input_st = document.getElementById("playground-st-code") as HTMLTextAreaElement;
+  const playground_input_st = document.getElementById("playground-st-code") as HTMLInputElement;
   const playground_input_js = document.getElementById("playground-js-code") as HTMLTextAreaElement;
   const playground_output = document.getElementById("playground-output") as HTMLTextAreaElement;
   const rt = new signtext.Runtime();
@@ -24,4 +24,14 @@ import * as signtext from "signtext";
 
     return false;
   });
+
+  playground_input_st.value = `[concat]("Hello", " ", [name], "!")`;
+  playground_input_js.value = `
+{
+  concat(...x) {
+    return x.join("");
+  },
+  name: "world"
+}
+  `.trim();
 })();
