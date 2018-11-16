@@ -27,3 +27,7 @@ h1 {
   color: white;
   font-family: "Consolas", monospace;
 }
+
+.legal {
+  font-family: "Courier New", "Consolas", monospace;
+}
