@@ -18,7 +18,8 @@ import * as signtext from "signtext";
     ev.preventDefault();
 
     const pg = getPlayground();
-    rt.eval(pg.input_signtext, pg.namespace)
+    const ctx = new signtext.Context(pg.namespace);
+    rt.eval(pg.input_signtext, ctx)
         .catch((err) => err)
         .then((x) => playground_output.innerText = x);
 

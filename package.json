@@ -33,7 +33,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "signtext": "^1.0.0"
+    "signtext": "latest"
   },
   "target": {
     "ie": 8
